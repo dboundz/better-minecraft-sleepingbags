@@ -4,7 +4,7 @@ A NeoForge 1.21.1 mod. Place a wool bag on the ground and sleep in it at night. 
 
 ## Download
 
-- [sleepingbag-1.0.2.jar](https://github.com/dboundz/better-minecraft-sleepingbags/raw/main/dist/sleepingbag-1.0.2.jar)
+- [sleepingbag-1.0.3.jar](https://github.com/dboundz/better-minecraft-sleepingbags/raw/main/dist/sleepingbag-1.0.3.jar)
 
 Needs Minecraft **1.21.1** and NeoForge **21.1.265**. Put the jar in the `mods` folder on the server and on every client, then restart.
 
@@ -28,7 +28,7 @@ A bag and one dye, anywhere in the crafting grid, recolors it. Durability and en
 
 - Place it on the ground like a bed. It is two blocks long, makes a wool sound, and has no wooden frame.
 - Right-click the head at night to lie down, including when it is raining. Your head rests on whatever block the bag is sitting on, and the quilt covers your body.
-- The first time a player lies down in one, they earn the Light Sleeper advancement.
+- The first time a player sleeps through the night in one, they earn the Light Sleeper advancement. Waking up early does not count.
 - Falling asleep takes 10 seconds. After that you count toward the server's sleep percentage, the same way a bed does.
 - Getting out before those 10 seconds are up spends nothing.
 - A finished sleep spends 1 durability. A bag lasts 10 sleeps.

@@ -2,7 +2,7 @@
   "itemGroup.sleepingbag": "Sleeping Bag",
   "enchantment.sleepingbag.quick_nap": "Quick Nap",
   "advancements.sleepingbag.light_sleeper.title": "Light Sleeper",
-  "advancements.sleepingbag.light_sleeper.description": "Sleep in a sleeping bag",
+  "advancements.sleepingbag.light_sleeper.description": "Sleep through the night in a sleeping bag",
   "block.sleepingbag.occupied": "This sleeping bag is occupied",
   "block.sleepingbag.thunderstorm": "You cannot use a sleeping bag during a thunderstorm",
   "block.sleepingbag.not_night": "You can only sleep in a sleeping bag at night",

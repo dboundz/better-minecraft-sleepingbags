@@ -2,38 +2,40 @@
   "ambientocclusion": false,
   "textures": {
     "quilt": "sleepingbag:block/quilt",
+    "pillow": "sleepingbag:block/pillow",
     "particle": "sleepingbag:block/quilt"
   },
   "elements": [
     {
-      "from": [0, 0, 8],
+      "from": [0, 0, 2],
       "to": [16, 2, 16],
       "faces": {
-        "up": {
-          "uv": [0, 0, 16, 8],
-          "texture": "#quilt",
-          "tintindex": 0
-        },
-        "down": {
-          "uv": [0, 0, 16, 8],
-          "texture": "#quilt",
-          "tintindex": 0
-        },
-        "north": {
-          "uv": [0, 30, 16, 32],
-          "texture": "#quilt",
-          "tintindex": 0
-        },
-        "east": {
-          "uv": [0, 30, 8, 32],
-          "texture": "#quilt",
-          "tintindex": 0
-        },
-        "west": {
-          "uv": [0, 30, 8, 32],
-          "texture": "#quilt",
-          "tintindex": 0
-        }
+        "up": { "uv": [0, 14, 16, 0], "texture": "#quilt", "tintindex": 0 },
+        "down": { "uv": [0, 14, 16, 0], "texture": "#quilt", "tintindex": 0 },
+        "east": { "uv": [2, 16, 16, 18], "texture": "#quilt", "tintindex": 0 },
+        "west": { "uv": [2, 16, 16, 18], "texture": "#quilt", "tintindex": 0 }
+      }
+    },
+    {
+      "from": [1, 0, 1],
+      "to": [15, 2, 2],
+      "faces": {
+        "up": { "uv": [1, 15, 15, 16], "texture": "#quilt", "tintindex": 0 },
+        "down": { "uv": [1, 15, 15, 16], "texture": "#quilt", "tintindex": 0 },
+        "north": { "uv": [1, 16, 15, 18], "texture": "#quilt", "tintindex": 0 },
+        "east": { "uv": [0, 16, 1, 18], "texture": "#quilt", "tintindex": 0 },
+        "west": { "uv": [0, 16, 1, 18], "texture": "#quilt", "tintindex": 0 }
+      }
+    },
+    {
+      "from": [2, 2, 2],
+      "to": [14, 4, 8],
+      "faces": {
+        "up": { "uv": [2, 2, 14, 8], "texture": "#pillow" },
+        "north": { "uv": [2, 8, 14, 10], "texture": "#pillow" },
+        "south": { "uv": [2, 8, 14, 10], "texture": "#pillow" },
+        "east": { "uv": [2, 8, 8, 10], "texture": "#pillow" },
+        "west": { "uv": [2, 8, 8, 10], "texture": "#pillow" }
       }
     }
   ]

@@ -1,5 +1,6 @@
 package com.sleepingbag.mixin;
 
+import com.sleepingbag.SleepingBagCriteria;
 import com.sleepingbag.block.SleepingBagBlock;
 import com.sleepingbag.logic.SleepLogic;
 import net.minecraft.core.BlockPos;
@@ -77,6 +78,7 @@ public abstract class PlayerMixin {
             }
             if (this.sleepingbag$completed && self instanceof ServerPlayer serverPlayer) {
                 SleepingBagBlock.consumeUse(serverPlayer, pos);
+                SleepingBagCriteria.SLEPT_IN_SLEEPING_BAG.get().trigger(serverPlayer);
             }
         } finally {
             this.sleepingbag$handling = false;

@@ -14,7 +14,7 @@ public abstract class LivingEntityMixin {
     private void sleepingbag$lowerOntoGround(BlockPos pos, CallbackInfo ci) {
         LivingEntity self = (LivingEntity) (Object) this;
         if (self.level().getBlockState(pos).getBlock() instanceof SleepingBagBlock) {
-            self.setPos(pos.getX() + 0.5D, pos.getY() + 0.15D, pos.getZ() + 0.5D);
+            self.setPos(pos.getX() + 0.5D, pos.getY() + 0.375D, pos.getZ() + 0.5D);
         }
     }
 }

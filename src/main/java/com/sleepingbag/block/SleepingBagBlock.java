@@ -1,6 +1,5 @@
 package com.sleepingbag.block;
 
-import com.sleepingbag.SleepingBagCriteria;
 import com.sleepingbag.item.SleepingBagItem;
 import com.sleepingbag.logic.SleepLogic;
 import com.mojang.serialization.MapCodec;
@@ -44,10 +43,7 @@ public class SleepingBagBlock extends HorizontalDirectionalBlock implements Enti
     public static final BooleanProperty QUICK = BooleanProperty.create("quick");
 
     private static final VoxelShape FOOT = Block.box(0, 0, 0, 16, 2, 16);
-    private static final VoxelShape HEAD_NORTH = Block.box(0, 0, 8, 16, 2, 16);
-    private static final VoxelShape HEAD_SOUTH = Block.box(0, 0, 0, 16, 2, 8);
-    private static final VoxelShape HEAD_WEST = Block.box(8, 0, 0, 16, 2, 16);
-    private static final VoxelShape HEAD_EAST = Block.box(0, 0, 0, 8, 2, 16);
+    private static final VoxelShape HEAD = Block.box(0, 0, 0, 16, 4, 16);
     private static final ThreadLocal<Boolean> BUSY = ThreadLocal.withInitial(() -> false);
     private static final ThreadLocal<Boolean> CREATIVE_BREAK = ThreadLocal.withInitial(() -> false);
 
@@ -168,7 +164,6 @@ public class SleepingBagBlock extends HorizontalDirectionalBlock implements Enti
             }
             return InteractionResult.SUCCESS;
         }
-        SleepingBagCriteria.SLEPT_IN_SLEEPING_BAG.get().trigger(serverPlayer);
         return InteractionResult.SUCCESS;
     }
 
@@ -285,12 +280,7 @@ public class SleepingBagBlock extends HorizontalDirectionalBlock implements Enti
         if (state.getValue(BedBlock.PART) == BedPart.FOOT) {
             return FOOT;
         }
-        return switch (state.getValue(FACING)) {
-            case SOUTH -> HEAD_SOUTH;
-            case WEST -> HEAD_WEST;
-            case EAST -> HEAD_EAST;
-            default -> HEAD_NORTH;
-        };
+        return HEAD;
     }
 
     @Override
