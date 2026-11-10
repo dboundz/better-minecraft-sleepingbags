@@ -8,7 +8,9 @@
     "PlayerMixin"
   ],
   "client": [
-    "GuiMixin"
+    "GuiMixin",
+    "PlayerRendererMixin",
+    "HumanoidArmorLayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
