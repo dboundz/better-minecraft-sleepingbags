@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:adventure/sleep_in_bed",
+  "criteria": {
+    "slept": {
+      "trigger": "sleepingbag:slept_in_sleeping_bag"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.sleepingbag.light_sleeper.description"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "sleepingbag:white_sleeping_bag"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.sleepingbag.light_sleeper.title"
+    }
+  },
+  "requirements": [
+    [
+      "slept"
+    ]
+  ]
+}

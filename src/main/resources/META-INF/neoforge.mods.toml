@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="sleepingbag"
-version="1.0.1"
+version="1.0.2"
 displayName="Sleeping Bag"
 description='''A colored sleeping bag. It skips the night slowly, wears out, and does not set your spawn.'''
 

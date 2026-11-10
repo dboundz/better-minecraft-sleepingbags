@@ -1,5 +1,6 @@
 package com.sleepingbag.block;
 
+import com.sleepingbag.SleepingBagCriteria;
 import com.sleepingbag.item.SleepingBagItem;
 import com.sleepingbag.logic.SleepLogic;
 import com.mojang.serialization.MapCodec;
@@ -167,6 +168,7 @@ public class SleepingBagBlock extends HorizontalDirectionalBlock implements Enti
             }
             return InteractionResult.SUCCESS;
         }
+        SleepingBagCriteria.SLEPT_IN_SLEEPING_BAG.get().trigger(serverPlayer);
         return InteractionResult.SUCCESS;
     }
 

@@ -17,6 +17,7 @@ public class SleepingBagMod {
         SleepingBagBlockEntities.BLOCK_ENTITIES.register(modBus);
         SleepingBagRecipes.SERIALIZERS.register(modBus);
         SleepingBagTabs.TABS.register(modBus);
+        SleepingBagCriteria.TRIGGERS.register(modBus);
         NeoForge.EVENT_BUS.addListener(SleepingBagEvents::onSetSpawn);
     }
 }
