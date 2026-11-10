@@ -17,6 +17,13 @@ java {
 neoForge {
     version = neo_version
 
+    runs {
+        client {
+            client()
+            gameDirectory = file("${System.getProperty('user.home')}/.cache/sleepingbag-build/runs/client")
+        }
+    }
+
     mods {
         sleepingbag {
             sourceSet sourceSets.main
