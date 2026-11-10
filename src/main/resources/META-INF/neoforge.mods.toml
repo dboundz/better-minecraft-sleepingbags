@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="sleepingbag"
+version="1.0.0"
+displayName="Sleeping Bag"
+description='''A colored sleeping bag. It skips the night slowly, wears out, and does not set your spawn.'''
+
+[[dependencies.sleepingbag]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.265,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.sleepingbag]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1,1.21.2)"
+    ordering="NONE"
+    side="BOTH"
+
+[[mixins]]
+config="sleepingbag.mixins.json"

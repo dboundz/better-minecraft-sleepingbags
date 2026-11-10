@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sleeping_bag",
+  "pattern": [
+    "FFF",
+    "WMW",
+    " W "
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "W": {
+      "item": "minecraft:lime_wool"
+    },
+    "M": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "result": {
+    "id": "sleepingbag:lime_sleeping_bag",
+    "count": 1
+  }
+}
