@@ -1,73 +1,36 @@
 {
+  "ambientocclusion": false,
   "textures": {
     "quilt": "sleepingbag:block/quilt",
     "particle": "sleepingbag:block/quilt"
   },
   "elements": [
     {
-      "from": [
-        0,
-        0,
-        8
-      ],
-      "to": [
-        16,
-        2,
-        16
-      ],
+      "from": [0, 0, 8],
+      "to": [16, 2, 16],
       "faces": {
         "up": {
-          "uv": [
-            0,
-            8,
-            16,
-            16
-          ],
+          "uv": [0, 0, 16, 8],
           "texture": "#quilt",
           "tintindex": 0
         },
         "down": {
-          "uv": [
-            0,
-            0,
-            16,
-            8
-          ],
+          "uv": [0, 0, 16, 8],
           "texture": "#quilt",
           "tintindex": 0
         },
         "north": {
-          "uv": [0, 14, 16, 16],
-          "texture": "#quilt",
-          "tintindex": 0
-        },
-        "south": {
-          "uv": [
-            0,
-            14,
-            16,
-            16
-          ],
+          "uv": [0, 30, 16, 32],
           "texture": "#quilt",
           "tintindex": 0
         },
         "east": {
-          "uv": [
-            8,
-            14,
-            16,
-            16
-          ],
+          "uv": [0, 30, 8, 32],
           "texture": "#quilt",
           "tintindex": 0
         },
         "west": {
-          "uv": [
-            0,
-            14,
-            8,
-            16
-          ],
+          "uv": [0, 30, 8, 32],
           "texture": "#quilt",
           "tintindex": 0
         }
